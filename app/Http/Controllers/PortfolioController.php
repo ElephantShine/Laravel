@@ -34,7 +34,7 @@ class PortfolioController extends Controller
 
     function portfolios()
     {
-        $path = storage_path("json/settings.json");
+        $path = storage_path("json/portfolios.json");
         $file = file_get_contents($path);
         $file = $this->removeBOM($file);
         $json = json_decode($file, true);

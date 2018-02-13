@@ -20,3 +20,5 @@ Route::get("/Contact/Success", ["as" => "contactSuccess", "uses" => "ContactCont
 Route::get("/Portfolios", ["as" => "portfolio", "uses" => "PortfolioController@Index"]);
 
 Route::get("/Portfolios/{name}", ["as" => "portfolioDetail", "uses" => "PortfolioController@Portfolio"]);
+
+Route::get("/Blogs/{name}", ["as" => "blog", "uses" => "BlogController@Index"]);

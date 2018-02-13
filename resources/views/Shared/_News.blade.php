@@ -18,10 +18,9 @@
                     </div>
                     <div class="post-content">
                         <p>要有多少的堅持與努力，才能成就一個風格如此獨特的設計鬼才─PAUL SMITH</p>
-                        <a class='post-more' href='/blog/20170828_paulsmith'>Read more &rarr;</a>
+                        <a class='post-more' href='/Blogs/20170828_PaulSmith'>Read more &rarr;</a>
                     </div>
                 </article>
-
             </div>
 
             <div class="col-sm-4"></div>
