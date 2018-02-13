@@ -11,4 +11,10 @@
 |
 */
 
-Route::get("/", "HomeController@Index");
+Route::get("/", ["as" => "index", "uses" => "HomeController@Index"]);
+
+Route::get("Contact", ["as" => "contact", "uses" => "ContactController@Index"]);
+
+Route::get("Contact/Success", ["as" => "contactSuccess", "uses" => "ContactController@Success"]);
+
+Route::get("Portfolio", ["as" => "portfolio", "uses" => "HomeController@Portfolio"]);

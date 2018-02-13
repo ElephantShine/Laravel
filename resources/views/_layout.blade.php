@@ -86,6 +86,5 @@
 <script src="/js/submenu-fix.js" ></script>
 <script src="/js/custom.js" ></script>
 
-{{--@RenderSection("Scripts", required: false)--}}
 </body>
 </html>

@@ -48,7 +48,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="text-center m-t-70">
-                    <a href="/Contact" class="btn btn-circle btn-def section-scroll wow tada animated" style="visibility: visible; animation-name: tada;">聯絡我們</a>
+                    <a href="{{ route("contact") }}" class="btn btn-circle btn-def section-scroll wow tada animated" style="visibility: visible; animation-name: tada;">聯絡我們</a>
                 </div>
             </div>
         </div>
