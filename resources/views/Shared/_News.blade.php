@@ -10,11 +10,11 @@
             <div class="col-sm-4">
                 <article class="post">
                     <div class="post-thumbnail">
-                        <img src="http://d33wubrfki0l68.cloudfront.net/71f98527d05a848413d23b37d4f955c35ca47f0c/bca7f/blog/20170828_paulsmith/01.png"
+                        <img src="/Blog/20170828_paulsmith/01.png"
                              alt="Paul Smith" title="Paul Smith">
                     </div>
                     <div class="post-header">
-                        <h2 class="post-title"><a href='/blog/20170828_paulsmith'>英國設計鬼才PAUL SMITH世界巡迴特展</a></h2>
+                        <h2 class="post-title"><a href='/Blog/20170828_paulsmith'>英國設計鬼才PAUL SMITH世界巡迴特展</a></h2>
                     </div>
                     <div class="post-content">
                         <p>要有多少的堅持與努力，才能成就一個風格如此獨特的設計鬼才─PAUL SMITH</p>

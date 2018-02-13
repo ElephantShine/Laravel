@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Utility;
 use Illuminate\Support\Collection;
 
 class PortfolioController extends Controller
@@ -34,24 +35,12 @@ class PortfolioController extends Controller
 
     function portfolios()
     {
-        $path = storage_path("json/portfolios.json");
-        $file = file_get_contents($path);
-        $file = $this->removeBOM($file);
-        $json = json_decode($file, true);
-        return $json;
+        $utility = new Utility();
+        return $utility -> getDataFromJson("json/portfolios.json");
     }
 
     function findPortfolios($name)
     {
-        $portfolio = collect($this->portfolios())->firstWhere("Path", $name);
-        return $portfolio;
-    }
-
-    function removeBOM($str = '')
-    {
-        if (substr($str, 0, 3) == pack("CCC", 0xef, 0xbb, 0xbf))
-            $str = substr($str, 3);
-
-        return $str;
+        return collect($this -> portfolios())->firstWhere("Path", $name);
     }
 }

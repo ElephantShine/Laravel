@@ -9,6 +9,8 @@
 namespace App\Http\Controllers;
 
 
+use App\Utility;
+
 class BlogController extends Controller
 {
     public function Index($name)
@@ -22,24 +24,13 @@ class BlogController extends Controller
 
     function blogs()
     {
-        $path = storage_path("json/blogs.json");
-        $file = file_get_contents($path);
-        $file = $this->removeBOM($file);
-        $json = json_decode($file, true);
-        return $json;
+        $utility = new Utility();
+        return $utility->getDataFromJson("json/blogs.json");
     }
 
     function findBlog($name)
     {
         $blog = collect($this->blogs())->firstWhere("Path", $name);
         return $blog;
-    }
-
-    function removeBOM($str = '')
-    {
-        if (substr($str, 0, 3) == pack("CCC", 0xef, 0xbb, 0xbf))
-            $str = substr($str, 3);
-
-        return $str;
     }
 }
