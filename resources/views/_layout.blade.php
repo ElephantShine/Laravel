@@ -34,21 +34,22 @@
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700' rel='stylesheet' type='text/css'>
 
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    {{--<link href="/css/bootstrap.css" rel="stylesheet">--}}
 
-    <!-- Plugins -->
-    <link href="/css/font-awesome.css" rel="stylesheet">
-    <link href="/css/simpletextrotator.css" rel="stylesheet">
-    <link href="/css/magnific-popup.css" rel="stylesheet">
-    <link href="/css/owl.carousel.css" rel="stylesheet">
-    <link href="/css/owl.theme.css" rel="stylesheet">
-    <link href="/css/superslides.css" rel="stylesheet">
-    <link href="/css/simple-line-icons.css" rel="stylesheet">
-    <link href="/css/vertical.css" rel="stylesheet">
-    <link href="/css/animate.css" rel="stylesheet">
+    {{--<!-- Plugins -->--}}
+    {{--<link href="/css/font-awesome.css" rel="stylesheet">--}}
+    {{--<link href="/css/simpletextrotator.css" rel="stylesheet">--}}
+    {{--<link href="/css/magnific-popup.css" rel="stylesheet">--}}
+    {{--<link href="/css/owl.carousel.css" rel="stylesheet">--}}
+    {{--<link href="/css/owl.theme.css" rel="stylesheet">--}}
+    {{--<link href="/css/superslides.css" rel="stylesheet">--}}
+    {{--<link href="/css/simple-line-icons.css" rel="stylesheet">--}}
+    {{--<link href="/css/vertical.css" rel="stylesheet">--}}
+    {{--<link href="/css/animate.css" rel="stylesheet">--}}
 
-    <!-- Template core CSS -->
-    <link href="/css/style.css" rel="stylesheet">
+    {{--<!-- Template core CSS -->--}}
+    {{--<link href="/css/style.css" rel="stylesheet">--}}
+    <link rel='stylesheet' href='http://d33wubrfki0l68.cloudfront.net/css/e6ea92c2fb5af437e2529c5476519209eca53575/css/bundle.min.css'/>
 </head>
 <body>
 <div class="page-loader">
@@ -67,24 +68,25 @@
 <script src="https://use.typekit.net/fft2wom.js"></script>
 <script>try { Typekit.load({async: true}); } catch (e) { }</script>
 
+<script src='http://d33wubrfki0l68.cloudfront.net/js/ac6263e175d721e3150330f4fcc8843df62749a9/js/bundle.min.js'></script>
 
-<script src="/js/jquery.js" ></script>
-<script src="/js/bootstrap.js" ></script>
-<script src="/js/jquery.parallax-1.1.3.js" ></script>
-<script src="/js/jquery.superslides.js" ></script>
-<script src="/js/jquery.mb.YTPlayer.js" ></script>
-<script src="/js/jquery.simple-text-rotator.js" ></script>
-<script src="/js/imagesloaded.pkgd.js" ></script>
-<script src="/js/isotope.pkgd.js" ></script>
-<script src="/js/jquery.magnific-popup.js" ></script>
-<script src="/js/owl.carousel.js" ></script>
-<script src="/js/jquery.fitvids.js" ></script>
-<script src="/js/jqBootstrapValidation.js" ></script>
-<script src="/js/appear.js" ></script>
-<script src="/js/wow.js" ></script>
-<script src="/js/smoothscroll.js" ></script>
-<script src="/js/submenu-fix.js" ></script>
-<script src="/js/custom.js" ></script>
+{{--<script src="/js/jquery.js" ></script>--}}
+{{--<script src="/js/bootstrap.js" ></script>--}}
+{{--<script src="/js/jquery.parallax-1.1.3.js" ></script>--}}
+{{--<script src="/js/jquery.superslides.js" ></script>--}}
+{{--<script src="/js/jquery.mb.YTPlayer.js" ></script>--}}
+{{--<script src="/js/jquery.simple-text-rotator.js" ></script>--}}
+{{--<script src="/js/imagesloaded.pkgd.js" ></script>--}}
+{{--<script src="/js/isotope.pkgd.js" ></script>--}}
+{{--<script src="/js/jquery.magnific-popup.js" ></script>--}}
+{{--<script src="/js/owl.carousel.js" ></script>--}}
+{{--<script src="/js/jquery.fitvids.js" ></script>--}}
+{{--<script src="/js/jqBootstrapValidation.js" ></script>--}}
+{{--<script src="/js/appear.js" ></script>--}}
+{{--<script src="/js/wow.js" ></script>--}}
+{{--<script src="/js/smoothscroll.js" ></script>--}}
+{{--<script src="/js/submenu-fix.js" ></script>--}}
+{{--<script src="/js/custom.js" ></script>--}}
 
 </body>
 </html>

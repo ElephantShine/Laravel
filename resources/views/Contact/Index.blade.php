@@ -1,67 +1,85 @@
-
 @extends("_layout")
 
-<div class="wrapper">
-    <section id="hero" class="module-hero module-parallax module-overlay-dark-1" data-background="/images/portfolioBanner.png">
-        <div class="hero-caption">
-            <div class="hero-text">
-                <h1 class="hero-title m-t-70">CONTACT 歡迎來作客</h1>
-                <p class="lead m-t-40">大象，擁有超強的記憶力。歡迎您留下資本資料，讓我們記住您，並與你聯繫！<br />象晴設計‧誠摯款待！</p>
+@section("content")
+    <div class="wrapper">
+        <section id="hero" class="module-hero module-parallax module-overlay-dark-1"
+                 data-background="/images/portfolioBanner.png">
+            <div class="hero-caption">
+                <div class="hero-text">
+                    <h1 class="hero-title m-t-70">CONTACT 歡迎來作客</h1>
+                    <p class="lead m-t-40">大象，擁有超強的記憶力。歡迎您留下資本資料，讓我們記住您，並與你聯繫！<br/>象晴設計‧誠摯款待！</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="module module-g">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 wow fadeInUp">
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="this.onload = function() { window.location = '/Contact/Success' }"></iframe>
-                    <form id="contact-form" role="form" method="POST" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLScTg2fqUJXJFV0PWSVZM6DUTzekOPTvgXywESqiAgCulhygzg/formResponse">
-                        <div class="form-group wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                            <label class="sr-only" for="name">*姓名</label>
-                            <input type="text" id="name" class="form-control" name="entry.1553256810" placeholder="*姓名" required="required">
+        <section id="contact" class="module module-g">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 wow fadeInUp">
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"
+                                onload="this.onload = function() { window.location = '/Contact/Success' }"></iframe>
+                        <form id="contact-form" role="form" method="POST" target="hidden_iframe"
+                              action="https://docs.google.com/forms/d/e/1FAIpQLScTg2fqUJXJFV0PWSVZM6DUTzekOPTvgXywESqiAgCulhygzg/formResponse">
+                            <div class="form-group wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                <label class="sr-only" for="name">*姓名</label>
+                                <input type="text" id="name" class="form-control" name="entry.1553256810"
+                                       placeholder="*姓名" required="required">
+                            </div>
+                            <div class="form-group wow fadeInUp" data-wow-delay=".1s"
+                                 style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                <label class="sr-only" for="company">公司名稱</label>
+                                <input type="text" id="company" class="form-control" name="entry.1361155596"
+                                       placeholder="公司名稱">
+                            </div>
+                            <div class="form-group wow fadeInUp" data-wow-delay=".2s"
+                                 style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <label class="sr-only" for="email">*E-mail</label>
+                                <input type="email" id="email" class="form-control" name="entry.2113513241"
+                                       placeholder="*E-mail" required="required">
+                            </div>
+                            <div class="form-group wow fadeInUp" data-wow-delay=".3s"
+                                 style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                                <label class="sr-only" for="phone">*連絡電話</label>
+                                <input type="text" id="phone" class="form-control" name="entry.1066705664"
+                                       placeholder="*連絡電話" required="required">
+                            </div>
+                            <div class="form-group wow fadeInUp" data-wow-delay=".4s"
+                                 style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                                <label class="sr-only" for="work">*需求項目</label>
+                                <select name="entry.859200831" id="work" class="form-control" size="1"
+                                        required="required">
+                                    <option value="">*需求項目</option>
+                                    <option>LOGO設計</option>
+                                    <option>形象設計</option>
+                                    <option>包裝設計</option>
+                                    <option>活動文宣</option>
+                                    <option>書籍型錄</option>
+                                    <option>教材編排</option>
+                                    <option>婚卡喜帖</option>
+                                    <option>印刷輸出</option>
+                                </select>
+                            </div>
+                            <div class="form-group wow fadeInUp" data-wow-delay=".5s"
+                                 style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                                <textarea class="form-control" id="message" name="entry.2071356545" rows="7"
+                                          placeholder="訊息"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-block btn-custom-2 wow fadeInUp" data-wow-delay=".3s"
+                                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                                送出
+                            </button>
+                        </form>
+                        <div class="ajax-response">
+                            <i class="fa fa-warning"></i> * 為必填(選)欄位
                         </div>
-                        <div class="form-group wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                            <label class="sr-only" for="company">公司名稱</label>
-                            <input type="text" id="company" class="form-control" name="entry.1361155596" placeholder="公司名稱">
-                        </div>
-                        <div class="form-group wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                            <label class="sr-only" for="email">*E-mail</label>
-                            <input type="email" id="email" class="form-control" name="entry.2113513241" placeholder="*E-mail" required="required">
-                        </div>
-                        <div class="form-group wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                            <label class="sr-only" for="phone">*連絡電話</label>
-                            <input type="text" id="phone" class="form-control" name="entry.1066705664" placeholder="*連絡電話" required="required">
-                        </div>
-                        <div class="form-group wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-                            <label class="sr-only" for="work">*需求項目</label>
-                            <select name="entry.859200831" id="work" class="form-control" size="1" required="required">
-                                <option value="">*需求項目</option>
-                                <option>LOGO設計</option>
-                                <option>形象設計</option>
-                                <option>包裝設計</option>
-                                <option>活動文宣</option>
-                                <option>書籍型錄</option>
-                                <option>教材編排</option>
-                                <option>婚卡喜帖</option>
-                                <option>印刷輸出</option>
-                            </select>
-                        </div>
-                        <div class="form-group wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                            <textarea class="form-control" id="message" name="entry.2071356545" rows="7" placeholder="訊息"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-block btn-custom-2 wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                            送出
-                        </button>
-                    </form>
-                    <div class="ajax-response">
-                        <i class="fa fa-warning"></i> * 為必填(選)欄位
+                    </div>
+                    <div class="col-sm-6 wow fadeInUp" style="text-align: center;">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Felephantshine2016&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                width="400" height="500" style="border:none;overflow:hidden" scrolling="no"
+                                frameborder="0" allowTransparency="true"></iframe>
                     </div>
                 </div>
-                <div class="col-sm-6 wow fadeInUp" style="text-align: center;">
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Felephantshine2016&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
+@endsection()
